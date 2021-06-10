@@ -12,5 +12,13 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+// HOMEPAGE
 Route::get('/','PageController@index')->name('home');
+
+// CONTATTI
+
+Route::get('/contatti','PageController@contacts')->name('contacts');
+
+// VIAGGI
+Route::get('/vacations','VacationController@index')->name('vacations');
+
